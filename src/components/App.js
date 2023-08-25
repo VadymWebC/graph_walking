@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>graphs</h1>
-            </div>
-        )
-    }
+const App = ({ grid }) => {
+    return (
+        <div>
+            {grid.map((row, i) => (
+                <div key={i}>
+                    {row.map((val, j) => (
+                        <div key={i * row.length + j} className="cell"></div>
+                    ))}
+                </div>
+            ))}
+        </div>
+    )
 }
 
 export default App
