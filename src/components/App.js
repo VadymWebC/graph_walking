@@ -1,9 +1,10 @@
 import React from 'react'
-import './App.js'
+import './App.css'
 
 const App = ({ grid }) => {
     return (
         <div>
+            <div>Click on the red cells</div>
             {grid.map((row, i) => (
                 <div key={i}>
                     {row.map((val, j) => (
