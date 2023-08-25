@@ -1,0 +1,14 @@
+.cell {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border: 1px solid lightgray;
+}
+
+.cell-red {
+    background: red;
+}
+.cell-green {
+    background: green;
+}
